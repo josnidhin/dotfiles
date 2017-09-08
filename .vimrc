@@ -20,3 +20,7 @@ set expandtab
 " Visual settings
 set showmatch
 set mat=5
+
+augroup JS
+  au BufNewFile *.js 0r ~/.vim/templates/js.template | let IndentStyle = "js"
+augroup END

@@ -1,8 +1,8 @@
+execute pathogen#infect()
+
 filetype on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
 syntax enable
-
-"colorscheme habiLight
 
 " Formatting
 set ruler " Ruler on
@@ -20,4 +20,3 @@ set expandtab
 " Visual settings
 set showmatch
 set mat=5
-

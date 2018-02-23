@@ -24,3 +24,7 @@ set mat=5
 augroup JS
   au BufNewFile *.js 0r ~/.vim/templates/js.template | let IndentStyle = "js"
 augroup END
+
+augroup GO
+  au BufNewFile *.go 0r ~/.vim/templates/go.template
+augroup END

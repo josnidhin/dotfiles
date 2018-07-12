@@ -23,6 +23,9 @@ set mat=5
 
 augroup JS
   au BufNewFile *.js 0r ~/.vim/templates/js.template | let IndentStyle = "js"
+  au FileType javascript setlocal foldmethod=syntax
+  au FileType javascript setlocal foldlevelstart=1
+  au FileType javascript setlocal foldnestmax=1
 augroup END
 
 augroup GO

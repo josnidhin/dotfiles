@@ -20,6 +20,7 @@ set expandtab
 " Visual settings
 set showmatch
 set mat=5
+:hi Folded ctermbg=0 " set the fold highlight colour
 
 augroup JS
   au BufNewFile *.js 0r ~/.vim/templates/js.template | let IndentStyle = "js"

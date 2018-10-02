@@ -29,6 +29,10 @@ augroup JS
   au FileType javascript setlocal foldnestmax=1
 augroup END
 
+augroup TS
+  au BufNewFile *.ts 0r ~/.vim/templates/ts.template
+augroup END
+
 augroup GO
   au BufNewFile *.go 0r ~/.vim/templates/go.template
 augroup END

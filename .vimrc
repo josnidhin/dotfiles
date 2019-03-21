@@ -35,4 +35,5 @@ augroup END
 
 augroup GO
   au BufNewFile *.go 0r ~/.vim/templates/go.template
+  au FileType go setlocal noexpandtab
 augroup END

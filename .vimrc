@@ -33,7 +33,23 @@ augroup TS
   au BufNewFile *.ts 0r ~/.vim/templates/ts.template
 augroup END
 
+augroup PY
+  au FileType python setlocal ts=4
+  au FileType python setlocal shiftwidth=4
+  au FileType python setlocal foldmethod=syntax
+  au FileType python setlocal foldlevelstart=1
+  au FileType python setlocal foldnestmax=1
+augroup END
+
 augroup GO
   au BufNewFile *.go 0r ~/.vim/templates/go.template
+  au FileType go setlocal nosmarttab
   au FileType go setlocal noexpandtab
+  au FileType go setlocal foldmethod=syntax
+  au FileType go setlocal foldlevelstart=1
+  au FileType go setlocal foldnestmax=1
+augroup END
+
+augroup Jenkins
+  au BufRead,BufNewFile Jenkinsfile* setlocal syntax=groovy
 augroup END

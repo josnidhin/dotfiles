@@ -30,8 +30,11 @@ augroup JS
   au FileType javascript setlocal foldnestmax=1
 augroup END
 
-augroup TS
-  au BufNewFile *.ts 0r ~/.vim/templates/ts.template
+augroup MJS
+  au BufNewFile *.mjs 0r ~/.vim/templates/mjs.template | let IndentStyle = "js"
+  au FileType javascript setlocal foldmethod=syntax
+  au FileType javascript setlocal foldlevelstart=1
+  au FileType javascript setlocal foldnestmax=1
 augroup END
 
 augroup PY

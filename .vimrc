@@ -6,7 +6,8 @@ syntax enable
 
 " Formatting
 set ruler " Ruler on
-set nu " Line number on
+set number relativenumber
+set nu rnu " Line number on
 set nowrap " Line wrapping off
 set timeoutlen=250 " Time to wait after ESC
 set ts=2 " Tabs 2 spaces

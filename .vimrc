@@ -19,7 +19,7 @@ set smarttab
 set expandtab
 
 " Visual settings
-colorscheme peachpuff
+colorscheme desert
 set showmatch
 set mat=5
 :hi Folded ctermbg=0 " set the fold highlight colour

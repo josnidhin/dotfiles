@@ -17,6 +17,7 @@ set cinwords=if,else,while,do,for,switch,case
 set autoindent
 set smarttab
 set expandtab
+set rtp+=~/.fzf
 
 " Visual settings
 colorscheme desert
